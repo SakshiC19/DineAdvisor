@@ -18,24 +18,23 @@
     }
 
     :root {
-      --green: #00b894;
-      --green-dark: #009e7a;
-      --green-light: #e6f9f5;
+      --primary: #ff6b35;
+      /* warm orange (food vibe) */
+      --primary-dark: #e85a2a;
 
-      --blue: #00a8ff;
-      --blue-light: #e6f4ff;
+      --secondary: #1e293b;
+      /* dark navy (tech feel) */
+      --accent: #fbbf24;
+      /* soft yellow highlight */
+
+      --bg: linear-gradient(145deg, #fff7f2 0%, #ffece3 60%, #fffdfb 100%);
 
       --white: #ffffff;
-      --bg: linear-gradient(145deg, #e6f9ff 0%, #d0f0ff 60%, #f5fdff 100%);
+      --text: #0f172a;
+      --muted: #64748b;
 
-      --text: #0a1e2e;
-      --muted: #4a7c99;
-
-      --shadow-sm: 0 2px 12px rgba(0, 168, 255, 0.08);
-      --shadow-md: 0 8px 32px rgba(0, 168, 255, 0.14);
-
-      --radius: 16px;
-      --border: #bfe6ff;
+      --shadow-sm: 0 2px 12px rgba(255, 107, 53, 0.1);
+      --shadow-md: 0 8px 32px rgba(255, 107, 53, 0.2);
     }
 
     body {
@@ -64,7 +63,7 @@
       gap: 10px;
       font-size: 20px;
       font-weight: 700;
-      color: var(--green);
+      color: var(--primary);
       text-decoration: none;
     }
 
@@ -83,11 +82,11 @@
     }
 
     .nav-links a:hover {
-      color: var(--green);
+      color: var(--primary);
     }
 
     .nav-cta {
-      background: var(--green) !important;
+      background: var(--primary) !important;
       color: var(--white) !important;
       padding: 9px 22px;
       border-radius: 50px;
@@ -95,7 +94,7 @@
     }
 
     .nav-cta:hover {
-      background: var(--green-dark) !important;
+      background: var(--primary-dark) !important;
       color: var(--white) !important;
     }
 
@@ -140,7 +139,7 @@
       align-items: center;
       gap: 10px;
       background: linear-gradient(135deg, #ffffff, #fff3ee);
-      color: var(--green);
+      color: var(--primary);
       font-size: 13px;
       font-weight: 700;
       padding: 10px 22px;
@@ -190,7 +189,7 @@
     .hero-badge .badge-dot {
       width: 6px;
       height: 6px;
-      background: var(--green);
+      background: var(--primary);
       border-radius: 50%;
       display: inline-block;
       animation: badgePulse 1.5s ease-in-out infinite;
@@ -206,7 +205,7 @@
     }
 
     .hero h1 span {
-      color: var(--green);
+      color: var(--primary);
     }
 
     .hero p {
@@ -225,7 +224,7 @@
     }
 
     .btn-primary {
-      background: var(--green);
+      background: var(--primary);
       color: var(--white);
       padding: 14px 32px;
       border-radius: 50px;
@@ -240,14 +239,14 @@
     }
 
     .btn-primary:hover {
-      background: var(--green-dark);
+      background: var(--primary-dark);
       transform: translateY(-2px);
       box-shadow: 0 8px 24px rgba(0, 168, 255, 0.35);
     }
 
     .btn-outline {
-      border: 2px solid var(--green);
-      color: var(--green);
+      border: 2px solid var(--primary);
+      color: var(--primary);
       padding: 13px 28px;
       border-radius: 50px;
       font-weight: 600;
@@ -300,7 +299,7 @@
       font-weight: 900;
       line-height: 1;
       margin-bottom: 8px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -324,7 +323,7 @@
       font-size: 30px;
       font-weight: 800;
       margin-bottom: 8px;
-      background: linear-gradient(135deg, var(--text), var(--green));
+      background: linear-gradient(135deg, var(--text), var(--primary));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -367,7 +366,7 @@
     .feature-icon {
       width: 58px;
       height: 58px;
-      background: linear-gradient(135deg, var(--blue), var(--green));
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
       border-radius: 16px;
       display: flex;
       align-items: center;
@@ -411,8 +410,8 @@
     .cta-strip {
       margin: 20px 60px 60px;
       background: linear-gradient(135deg,
-          var(--green) 0%,
-          var(--green-dark) 100%);
+          var(--primary) 0%,
+          var(--primary-dark) 100%);
       border-radius: 24px;
       padding: 56px 48px;
       display: flex;
@@ -436,7 +435,7 @@
 
     .btn-white {
       background: var(--white);
-      color: var(--green);
+      color: var(--primary);
       padding: 13px 28px;
       border-radius: 50px;
       font-weight: 700;
@@ -474,7 +473,7 @@
       display: block;
       width: 24px;
       height: 2px;
-      background: var(--green);
+      background: var(--primary);
       border-radius: 2px;
       transition: all 0.3s;
     }
